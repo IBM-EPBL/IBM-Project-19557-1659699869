@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parkinson Prediction using ML</title>
+
+  <link rel="stylesheet" href="../static/css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav id="navigation">
+    <div class="wrapper">
+
+
+      <div class="menu">
+        <ul>
+          <li>
+            <a onclick="closeMenu()" href="/">Home</a>
+          </li>
+          <li><a onclick="closeMenu()" href="/">Info</a></li>
+          <li><a onclick="closeMenu()" href="/">Predict</a></li>
+        </ul>
+     </div>
+    </div>
+    </nav>
+    <section> 
+    <div>
+         <h2>Your result</h2>
+         <img src="{{image}}" alt="Result" id="image"  style="height:400px; width:500px;padding:20px;"/>
+              
+    </div>
+    </section>
+      <!-- ScrollReaveal Lib -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="../static/js/main.js"></script>
+</body>
+
+</html>
