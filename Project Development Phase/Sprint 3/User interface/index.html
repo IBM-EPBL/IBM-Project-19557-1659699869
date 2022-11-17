@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parkinson Prediction using Machine Learning</title>
+  <link rel="icon" type="image/x-icon" href="../static/assets/logo1.png">
+  <link rel="stylesheet" href="../static/css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&subset=cyrillic" rel="stylesheet" />
+</head>
+
+<body>
+  <nav id="navigation">
+    <div class="wrapper">
+
+
+      <div class="menu">
+        <ul>
+          <li>
+            <a onclick="closeMenu()" href="#home"><u>Home</u></a>
+          </li>
+          <li><a onclick="closeMenu()" href="#services"><u>Info</u></a></li>
+          <li><a onclick="closeMenu()" href="#about"><u>Predict</u></a></li>
+        </ul>
+
+        <!-- <a class="button" onclick="closeMenu()" href="#contact">Agende sua consulta</a> -->
+
+
+      </div>
+
+      <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+        <svg width="40" height="40" viewBox="100 40 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20H30" stroke="#00000F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h4>Hiiii Seniors,Welcome to our Smart Parkinson Detection System</h4>
+          <h1>Parkinson Disease prediction using Machine Learning</h1>
+        </header>
+
+        <div class="content">
+          <p>
+             Parkinson's disease is a progressive disorder that affects the nervous system and the parts of the body
+            controlled by the nerves. Symptoms start slowly. The first symptom may be a barely noticeable tremor in just
+            one hand. Tremors are common, but the disorder may also cause stiffness or slowing of movement.
+            In the early stages of Parkinson's disease, your face may show little or no expression. Your arms may not swing when you walk. Your speech may become soft or slurred. Parkinson's disease symptoms worsen as your condition progresses over time.
+
+Although Parkinson's disease can't be cured, medications might significantly improve your symptoms.
+          </p>
+
+
+
+
+        </div>
+      </div>
+
+      <div class="col-b">
+        <img src="../static/assets/tremor2.jpg"
+          alt="patient image" />
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <h3>9.35M PD</h3>
+          <p>Parkinson's disease worldwide on 2017-22 percentage</p>
+        </div>
+
+        <div class="stat">
+          <h3>6.3M PD</h3>
+          <p>Asia 2017-2022 persentage</p>
+        </div>
+
+        <div class="stat">
+          <h3>6.1PD</h3>
+          <p>India 2017-2022 persentage</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrapper">
+      <header>
+        <h1><u>General Information</u></h1>
+        <h2><u>Symptoms of Parkinson</u></h2>
+      </header>
+
+      <div class="content">
+        <div class="cards">
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Slowed movement (bradykinesia)</h3>
+            <p>
+              Over time, Parkinson's disease may slow your movement, making simple tasks difficult and time-consuming.
+              Your steps may become shorter when you walk. It may be difficult to get out of a chair. You may drag or
+              shuffle your feet as you try to walk.
+            </p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Rigid muscles</h3>
+            <p>
+              Muscle stiffness may occur in any part of your body. The stiff muscles can be painful and limit your
+              range of motion.
+            </p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Impaired posture and balance</h3>
+            <p>
+              Your posture may become stooped. Or you may fall or have balance problems as a result of
+              Parkinson's disease
+            </p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Loss of automatic movements</h3>
+            <p>
+              You may have a decreased ability to perform unconscious movements, including blinking, smiling or swinging
+              your arms when you walk.
+            </p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Speech changes</h3>
+            <p>
+              You may speak softly, quickly, slur or hesitate before talking. Your speech may be more of a monotone
+              rather than have the usual speech patterns.
+            </p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Writing changes</h3>
+            <p>
+              It may become hard to write, and your writing may appear small.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h2>Predict Yourself</h2>
+          
+          <h4> Upload your file here</h4>
+          <!-- <form id="form-data" method="post" enctype="multipart/form-data" action="/predict">
+            
+              <legend>Type for upload image:</legend>
+              <div>
+                <input type="radio" id="imageChoice1" name="imageType" value="Spril" />
+                <label for="contactChoice1">Sprial</label>
+          
+                <input type="radio" id="imageChoice2" name="imageType" value="Wave" />
+                <label for="contactChoice2">Wave</label>
+              </div>
+            
+          <input type="file" id="file-input" onchange="imageChange(event)"/>
+          <input type="submit" />
+          </form> -->
+
+          <!-- <button type="button" id="btn-predict" onclick="predict()">Predict</button> -->
+          <form action = "http://localhost:5555/predict" method = "POST" id="form-data"
+          enctype = "multipart/form-data">
+          <legend>Type of uploading image:</legend>
+              <div style="padding: 10px;">
+                <input type="radio" id="imageChoice1" name="imageType" value="spiral" required />
+                <label for="contactChoice1">Sprial</label>
+          
+                <input type="radio" id="imageChoice2" name="imageType" value="Wave" required/>
+                <label for="contactChoice2">Wave</label>
+              </div>
+          <input type = "file" name = "file" onchange="imageChange(event)" style="padding:10px" required/>
+          <input type = "submit" value="Predict" class="button"/>
+          </form>
+      
+          </header>
+
+        <div class="content">
+
+          <p>
+            Upload your sprial or wave diagram to predict the parkinson's disease
+          </p>
+        </div>
+      </div>
+
+      <div class="col-b">
+        <img src="../static/assets/thatha_pic.jpg"
+          alt="patient image" id="image" />
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- ScrollReaveal Lib -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="../static/js/main.js"></script>
+</body>
+
+</html>
